@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<script type="text/javascript" src="../jquery.js"></script>
+		<script type="text/javascript" src="../jquery.js">
+			var x;
+			x=$(document);
+			x.ready(inicio);
+
+			function inicio(){
+				var x = $("#revelar");
+				x.click(mostrar);
+			}
+			function mostrar(){
+				var x=$("[href$="#"]");
+				x.css("background","yellow");
+			}
+		</script>
+	</head>
+	<body>
+		<input type="button" id="revelar" value="Revelar"><br>
+		<a href="#">Enlace1</a><br>
+		<a href="imagen.jpg">Enlace2</a><br>
+		<a href="imagen.png">Enlace3</a><br>
+		<a href="#">Enlace4</a><br>
+		<a href="#">Enlace5</a><br>
+		<ul>
+			<li>Enlace1</li>
+			<li>Enlace2</li>
+			<li>Enlace3</li>
+			<li>Enlace4</li>
+			<li>Enlace5</li>
+
+		</ul>
+	</body>
+</html>

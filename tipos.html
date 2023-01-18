@@ -2,16 +2,31 @@
 	<head>
 		<script type="text/javascript" src="../jquery.js"></script>
 		<script type="text/javascript" src="../jquery.js">
+			var x;
+			x=$(document);
+			x.ready(inicializar);
+
+			function inicializar(){
+				var x=$("#boton1");
+				x.click(leer);
+				x=$("#boton2");
+			}
+
+			function leer(){
+				var x=$("p");
+				alert(x.text());
+			}
+
+			function escribir(){
+				var x=$("p");
+				x.text("XXXXXXXXXXXXXXXXXXX")
+			}
+
 		</script>
 	</head>
 	<body>
-		<h1>Yo soy un título</h1>
-		<p>Yo soy un parágrafo</p>
-		<h1>Yo soy un título</h1>
-		<p>Yo soy un parágrafo</p>
-		<h1>Yo soy un título</h1>
-		<p>Yo soy un parágrafo</p>
-		<h1>Yo soy un título</h1>
-		<p>Yo soy un parágrafo</p>
+		<input type="button" id="boton1" value="Leer texto">
+		<input type="button" id="boton2" value="Escribir texto">
+		<p>Este es el texto antiguo</p>
 	</body>
 </html>

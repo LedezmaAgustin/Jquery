@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<script type="text/javascript" src="../jquery.js"></script>
+		<script type="text/javascript" src="../jquery.js">
+			var x;
+			x=$(document);
+			x.ready(inicio);
+
+			function inicio(){
+				var x = $("#revelar");
+				x.click(mostrar);
+			}
+			function mostrar(){
+				var x=$("h1#cambiame");
+				x.css("background","yellow");
+			}
+		</script>
+	</head>
+	<body>
+	<input type="button" id="revelar" value="Revelar"><br>
+	<ul>
+		<li>Elemento1</li>
+		<li>Elemento2</li>
+		<li>Elemento3</li>
+		<li>Elemento4</li>
+		<li>Elemento5</li>
+
+	</ul>
+	</body>
+</html>
