@@ -1,0 +1,32 @@
+<html>
+	<head>
+		<script type="text/javascript" src="../jquery.js"></script>
+		<script type="text/javascript" src="../jquery.js">
+			var x;
+			x=$(document);
+			x.ready(inicializar);
+
+			function inicializar(){
+				var x=$("#boton1");
+				x.click(muestrahtml);
+			}
+			function muestrahtml(){
+				var x;
+				x=$("#formulario");
+				x.html("<form><input type="text"><input type="submit"></form>")
+			}
+			function entraRaton(){
+				$(this).css("background-color","yellow");
+			}
+			function saleRaton(){
+				$(this).css("background-color","white");
+			}
+		</script>
+		<style type="text/css">
+		
+		</style>
+	</head>
+	<body>
+		<div id="hola">Entras y sales</div>
+	</body>
+</html>

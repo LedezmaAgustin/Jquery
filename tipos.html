@@ -10,6 +10,7 @@
 				var x=$("#boton1");
 				x.click(leer);
 				x=$("#boton2");
+				x.click(escribir);
 			}
 
 			function leer(){
@@ -19,9 +20,8 @@
 
 			function escribir(){
 				var x=$("p");
-				x.text("XXXXXXXXXXXXXXXXXXX")
+				x.before("XXXXXXXXXXXXXXXXXXX")
 			}
-
 		</script>
 	</head>
 	<body>

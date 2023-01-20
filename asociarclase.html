@@ -2,18 +2,42 @@
 	<head>
 		<script type="text/javascript" src="../jquery.js"></script>
 		<script type="text/javascript" src="../jquery.js">
-		
+			var x;
+			x=$(document);
+			x.ready(inicializar);
+
+			function inicializar(){
+				var x=$("#boton1");
+				x.click(asociarClase);
+				x=$("#boton2");
+				x.click(disociarClase);
+			}
+			function asociarClase(){
+				var x=$("#articulo");
+				x.addClass("noticia");
+			}
+			function disociarClase(){
+				var x=$("#articulo");
+				x.addClass("noticia");
+			}
 		</script>
 		<style type="text/css">
-			
-
-
+			.noticia{
+				width:500px;
+				height: 500px;
+				border:1px solid black;
+				font-family:Arial;
+				font-height:10px;
+				color:grey;
+				background-color:rgb(200,200,200);
+			}
 		</style>
 	</head>
 	<body>
-		<input>
-		<input>
-		<div>
+		<input type="button" id="boton1" value="Asociar clase">
+		<input type="button" id="boton2" value="Disociar clase">
+		<div id="articulo">
+			Texto predeterminado para rellenar espacios
 		</div>
 	</body>
 </html>
