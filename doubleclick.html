@@ -7,15 +7,12 @@
 			x.ready(inicializar);
 
 			function inicializar(){
-				var x=$("#hola");
-				x.mousedown(presionar);
-				x.mouseup(soltar);
+				var x;
+				x=$("#hola");
+				x.dblclick(pulsar);
 			}
 			function presionar(){
-				$(this).css("background-color","red");
-			}
-			function soltar(){
-				$(this).css("background-color","blue");
+				alert("Has echo doble clic en el DIV")
 			}
 		</script>
 		<style type="text/css">
